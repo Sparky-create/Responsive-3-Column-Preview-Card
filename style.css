@@ -1,0 +1,219 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    width:60%;
+    margin:auto; 
+    margin-top:100px;
+}
+img{
+    margin:30px;
+}
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+    font-weight:400;
+    font-size: 15px;
+    padding:10px 30px 40px;
+}
+h2{
+    color:hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display;
+    font-weight:700;
+    margin-bottom:30px;
+    padding-left:30px;
+}
+.column1 button{
+    background-color: hsl(0, 0%, 95%);
+    font-family:Lexend Deca;
+    color:hsl(31, 77%, 52%);
+    font-size:15px;
+    padding:10px 15px;
+    border:hidden;
+    border-radius:17px;
+    margin:0px 30px 0px 30px;
+}
+.column1 button:hover{
+    background-color:hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+    border:1px solid hsl(0, 0%, 95%);
+}
+.column2 button{
+    background-color: hsl(0, 0%, 95%);
+    font-family:Lexend Deca;
+    color:hsl(184, 100%, 22%);
+    font-size:15px;
+    padding:10px 15px;
+    border:hidden;
+    border-radius:17px;
+    margin:30px;
+}
+.column2 button:hover{
+    background-color:hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+    border:1px solid hsl(0, 0%, 95%);
+}
+.column3 button{
+    background-color: hsl(0, 0%, 95%);
+    font-family:Lexend Deca;
+    color:hsl(179, 100%, 13%);
+    font-size:15px;
+    padding:10px 15px;
+    border:hidden;
+    border-radius:17px;
+    margin:30px;
+}
+.column3 button:hover{
+    background-color:hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+    border:1px solid hsl(0, 0%, 95%);
+}
+.column1{
+    flex:20%;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.column1 button{
+    margin-top:28px;
+} 
+.column2{
+    flex:20%;
+    background-color:hsl(184, 100%, 22%);
+}
+.column3{
+    flex:20%;
+    background-color:hsl(179, 100%, 13%);
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+@media only screen and (max-width:802px){
+    .column3 button{
+        margin-top:10px;
+    }
+}
+
+@media only screen and (max-width:798px){
+   .column1 button, .column2 button, .column3 button{
+    font-size:14px;
+    padding:8px 13px;
+   } 
+}
+@media only screen and (max-width:775px){
+    h2{
+        font-size:27px;
+    }
+}
+
+@media only screen and (max-width:755px){
+    .column1 button, .column2 button, .column3 button{
+     font-size:13px;
+     padding:7px 12px;
+    } 
+    .column2 p{
+        padding-bottom:8px;
+    }
+ }
+
+ @media only screen and (max-width:722px){
+    .column1 button, .column2 button, .column3 button{
+     font-size:13px;
+     padding:6px 11px;
+    } 
+    .column1 p{
+        padding-bottom:25px;
+    }
+ }
+
+ @media only screen and (max-width:715px){
+    .column1 button, .column2 button, .column3 button{
+     font-size:13px;
+     padding:5px 10px;
+    } 
+    .column1 p{
+        padding-bottom:25px;
+    }
+    p{
+        font-size: 14px;
+    }
+ }
+
+ @media only screen and (max-width:709px){
+    .column1 button, .column2 button, .column3 button{
+     font-size:12px;
+    } 
+ }
+
+ @media only screen and (max-width:695px){
+    .column2 button{
+     font-size:11px;
+    } 
+    .column3 h2{
+        margin-right:10px;
+    }
+    .column3 p{
+        padding-bottom:68px;
+    }
+ }
+
+ @media only screen and (max-width:692px){
+    .container{
+        flex-wrap:nowrap;
+    }
+
+@media only screen and (max-width:650px){
+    h2{
+        font-size:20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .column1 button, .column2 button, .column3 button{
+        font-size:10px;
+        padding:5px 10px;
+       } 
+}
+
+@media only screen and (max-width: 622px) {
+    .column3 p{
+        padding-bottom:38px;
+    }
+    h2{
+        margin-right:10px;
+    }
+}
+
+@media only screen and (max-width:627px){
+    .column1, .column2, .column3 {
+     font-size:9px;
+    } 
+ }
+
+@media only screen and (max-width: 400px) {
+    h2{
+        margin-right:10px;
+    }
+}
+@media only screen and (max-width:376px){
+    .container{
+        flex-wrap:wrap;
+    }
+    .column1{
+        border-radius:10px 10px 0px 0px;
+    }
+    .column1 button{
+        margin-bottom:30px;
+    }
+    .column3{
+        border-radius:0px 0px 10px 10px;
+    }
+ }
